@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BUG</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="js/angular.min.js"></script>//与js文件一致，但是打包后的js文件   压缩空间小 能保密
+    <script type="text/javascript" src="js/angular-route.js"></script>
+    <script type="text/javascript" src="js/angular-resource.js"></script>
+    <script type="text/javascript" src="js/dataservice.js"></script>
+    <script type="text/javascript" src="js/myapp.js"></script>//路由
+</head>
+<body ng-app="mainApp">//angular写好的类似于module的东西，ng开头的   ng-app 是anglar的入口
+<div ng-controller="mainCtrl" class="container">//angular.js based on different controller, angular 2 based on different components
+    <h1>Mean Stack application</h1>
+    <hr>
+    <nav>//single page
+        <a href="#home">Home</a>//#是single page的提示符
+        <a href="#add">add</a>
+        <a href="#show">slide show</a>
+    </nav>
+    <div ng-view></div>//会自动加载single page的位置
+
+</div>
+</body>
+</html>
