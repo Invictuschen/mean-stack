@@ -4,7 +4,7 @@ const  router= express.Router();//后台路由
 var ed = require('./dao/empdao');
 var MongoClient= require('mongodb').MongoClient;//引入第三方库
 
-var uri = 'mongodb://localhost:27017/killer';//
+var uri = 'mongodb://localhost:27017/Mercury';//
 
 router.get('/emp',(req, res)=> {//后台地址
     MongoClient.connect(uri, (err, db)=>{//promise:可以发ajax call  三种状态  fulfill pending reject  （ajax:用于发异步请求 call)
